@@ -14,7 +14,7 @@ class Square:
 
     def area(self):
         """Prints area"""
-        return self.__size
+        return self.__size ** 2
 
     @property
     def size(self):
