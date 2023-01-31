@@ -10,6 +10,6 @@ class Rectangle(BaseGeometry):
         """ Initializes new rectangle """
 
         self.integer_validator("width", width)
-        self.__width = width
         self.integer_validator("height", height)
+        self.__width = width
         self.__height = height
