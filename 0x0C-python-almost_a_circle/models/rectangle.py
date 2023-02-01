@@ -7,7 +7,6 @@ class Rectangle(Base):
     """ Inherits from Base """
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Initializes class """
-
         super().__init__(id)
         self.width = width
         self.height = height
@@ -69,3 +68,12 @@ class Rectangle(Base):
     def area(self):
         """ Returns area of Rectangle """
         return self.__width * self.__height
+
+    def display(self):
+        """ Prints Rectangle to stdout """
+        for i in range(self.height):
+            for x in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print('#', end="")
+            print()
