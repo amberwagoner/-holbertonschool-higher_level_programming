@@ -71,6 +71,8 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints Rectangle to stdout """
+        for y in range(self.y):
+            print()
         for i in range(self.height):
             for x in range(self.x):
                 print(" ", end="")
@@ -82,3 +84,4 @@ class Rectangle(Base):
         """ Creates new string """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
+
