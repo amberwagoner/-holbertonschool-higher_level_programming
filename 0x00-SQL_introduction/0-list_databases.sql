@@ -1,2 +1,2 @@
 -- Create Database
-SELECT * from Database
+SHOW DATABASES;
