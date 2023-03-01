@@ -5,7 +5,7 @@ import MySQLdb
 
 
 if __name__ == "__main__":
-    """ Displays all values in states where name matches and is safe from MySQL injections """
+    """ All values in states where name matches & is safe from injections """
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM states")
