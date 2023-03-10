@@ -6,10 +6,9 @@ import urllib.request
 url = 'https://intranet.hbtn.io/status'
 
 with urllib.request.urlopen(url) as response:
-    body = response.read()
-    content = body.decode('utf-8')
+    html = response.read()
 
 print("Body response:")
-print("    - type: {}".format(type(body)))
-print("    - content: {}".format(body))
-print("    - utf8 content: {}".format(content))
+print("    - type: {}".format(type(html)))
+print("    - content: {}".format(html))
+print("    - utf8 content: {}".format(html.decode('utf-8')))
