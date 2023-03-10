@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """ Displays the X-Request-Id variable """
-import urllib
 import sys
+from sys import argv
+import urllib.request
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    with urllib.request.urlopen(argv[1]) as response:
+        print(response.headers["X-Request-Id"])
