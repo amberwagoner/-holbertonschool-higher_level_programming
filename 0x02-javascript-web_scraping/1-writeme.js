@@ -13,7 +13,5 @@ if (process.argv.length < 4) {
       console.error(`Error occurred while writing to the file: ${error}`);
       return;
     }
-
-    console.log(`Successfully wrote "${contentToWrite}" to file "${filePath}"`);
   });
 }
